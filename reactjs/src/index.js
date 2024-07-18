@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MyApp from './components/MyApp';
+// import MyApp from './components/MyApp';
+import App from "./tic_tac_toe/src/App";
+import "./tic_tac_toe/src/styles.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyApp/>
+    {/* <MyApp/> */}
+    <App/>
   </React.StrictMode>
 );
 
