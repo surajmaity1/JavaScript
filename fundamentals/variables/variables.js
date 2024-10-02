@@ -6,3 +6,8 @@ const hobbies = ["Sports", "Cooking"];
 hobbies.push("Working");
 console.log(hobbies);
 
+const bigInteger =  234567890123456789012345678901234567890n;
+console.log(typeof bigInteger);
+
+var symbol1 = Symbol('symbol');
+console.log(typeof symbol1);

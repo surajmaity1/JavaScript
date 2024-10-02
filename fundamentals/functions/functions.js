@@ -15,7 +15,7 @@ const fun = () => {
 hello1("Suraj");
 hello2("Sun");
 
-const num = number => { 
+const num = number => {
     return number + 3;
 }
 
@@ -24,7 +24,7 @@ console.log(typeof num(3));
 // Destructuring in Function Parameter Lists
 
 /*
-function storeOrder(order) { // normal 
+function storeOrder(order) { // normal
     localStorage.setItem('id', order.id);
     localStorage.setItem('currency', order.currency);
 }
@@ -41,17 +41,17 @@ storeOrder({id: 5, currency: 'USD', amount: 15.99}); // one argument / value!
 // Using function as values
 
 function handleTimeout() {
-  console.log("Timed out!");
+    console.log("Timed out!");
 }
 
 const handleTimeout2 = () => {
-  console.log("Timed out ... again!");
+    console.log("Timed out ... again!");
 };
 
 setTimeout(handleTimeout, 2000);
 setTimeout(handleTimeout2, 3000);
 setTimeout(() => {
-  console.log("More timing out...");
+    console.log("More timing out...");
 }, 4000);
 
 console.log("Guess when I'll execute");
@@ -59,11 +59,19 @@ console.log("Guess when I'll execute");
 
 // Nested function
 function init() {
-  function greet() {
-    console.log("HI");
-  }
+    function greet() {
+        console.log("HI");
+    }
 
-  greet();
+    greet();
 }
+
 // greet(); // ReferenceError: greet is not defined
 init();
+
+//  Immediately Invoked Function ( known as IIFE and pronounced as IIFY)
+(function () {
+    //Do something;
+    console.log('Do something');
+})();
+

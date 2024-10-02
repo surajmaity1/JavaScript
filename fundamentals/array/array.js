@@ -15,7 +15,7 @@ const index = hobbies.findIndex((item) => {
 */
 console.log(index);
 
-const newHobbies = hobbies.map((item) => ({ text: item + " Hobby"}));
+const newHobbies = hobbies.map((item) => ({text: item + " Hobby"}));
 console.log(newHobbies);
 
 const userNameData = ["Max", "Schwarzmüller"];
@@ -24,7 +24,7 @@ const fName = userNameData[0];
 const lName = userNameData[1];
 
 
-// destructuring array 
+// destructuring array
 // you don't have to use variable as same property name
 const [firstName, lastName] = ["Max", "Schwarzmüller"];
 
@@ -38,3 +38,21 @@ const anotherHobbies = ["Reading"];
 const mergedHobbies = [...hobbies, ...anotherHobbies];
 console.log(mergedHobbies);
 
+const obj1 = {def: "hello"};
+const obj2 = {def: "hello"};
+const obj2 = obj1;
+
+console.log(obj1 == obj2);
+console.log(obj1 === obj2);
+
+const arr1 = [1, "hello"];
+const arr2 = [1, "hello"];
+const arr2 = arr1;
+
+console.log(arr1 == arr2);
+console.log(arr1 === arr2);
+
+const arrayThree = [1, true, "h"];
+const arrayFour = "1,true,h";
+
+console.log(arrayThree == arrayFour)
