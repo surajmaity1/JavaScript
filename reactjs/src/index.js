@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import './index.css';
 import reportWebVitals from './reportWebVitals';
-import App from './thinking-in-react/App';
+// import App from './thinking-in-react/App';
+import PreventDefaultExample from './components/PreventDefaultExample';
 // import MyApp from './components/MyApp';
 // import App from "./tic_tac_toe/src/App"; /* Tic Tac Toe */ 
 // import "./tic_tac_toe/src/styles.css"; /* Tic Tac Toe */ 
@@ -12,7 +13,8 @@ root.render(
   <React.StrictMode>
     {/* <MyApp/> */}  {/* Basic */}
     {/* <App /> */ /* Tic Tac Toe */}
-    <App/> {/* thinking-in-react */}
+    {/*<App/> {/* thinking-in-react */} 
+    <PreventDefaultExample/>
   </React.StrictMode>
 );
 
