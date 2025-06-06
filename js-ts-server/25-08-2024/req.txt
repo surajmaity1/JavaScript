@@ -1,0 +1,11 @@
+1. write a new promise
+2. it'll resolve in two seconds
+3. when it resolves, print promises resolves
+
+promise
+
+
+home work --
+
+create a set time out
+but without promise

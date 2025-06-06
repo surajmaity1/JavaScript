@@ -38,3 +38,43 @@ with (objectWithExample) {
     console.log(thirdVariable);
 }
 
+// another example of with
+
+console.log('----------');
+
+function jira(obj) {
+    with (obj) {
+        e = 2;
+    }
+}
+
+var objectOne = {
+    e: 3
+}
+var objectTwo = {
+    f: 4
+};
+
+jira(objectOne);
+console.log(objectOne.e);
+jira(objectTwo);
+console.log(objectTwo.e); // undefined
+console.log(e);
+
+console.log('----------');
+
+var a = 5;
+(function IIFE(def) {
+    const window = {
+        a: 2
+    }
+    def(window);
+})(
+    function def(global) {
+        var a = 3;
+        console.log(a);
+        console.log(global.a);
+    }
+);
+
+// The compiler strikes again
