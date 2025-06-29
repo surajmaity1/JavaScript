@@ -1,0 +1,47 @@
+.button-container {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#add-container {
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: 1px solid red;
+}
+
+#fill-water {
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: 1px solid red;
+  margin-right: 5px;
+}
+
+.fill-drain-container {
+  margin: 2%;
+}
+
+#drain-water {
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: 1px solid red;
+  margin-left: 5px;
+}
+
+.new-bottle {
+  height: 100px;
+  width: 60px;
+  border: 1.5px solid rgb(243, 150, 10);
+  border-radius: 10px;
+  margin: 2%;
+  position: relative;
+}
+
+.new-water-level {
+  height: 10px;
+  width: 60px;
+  background-color: rgb(70, 131, 237);
+  position: absolute;
+}
